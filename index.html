@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -33,14 +35,14 @@
       </nav>
     </header>
 
-
+ 
     <main class="container">
       <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
       <section class="main-slider">
         <h2 class="visually-hidden">Слайдер</h2>
         <div class="slide-1">
           <input type="radio" name="slide-radio-1" value="slide-1" checked>
-          <p><b>Дорого, долго,<br> скрупулезно.</b></p>
+          <p><b class="tagline">Дорого, долго,<br> скрупулезно.</b></p>
           <p>Математический выверенный дизайн<br> для вашего сайта или приложения.</p>
           <p>
             <a class="btn button-more" href="#">Узнать больше</a>
@@ -72,7 +74,7 @@
               </p>
               <h3 class="service-header">Веб-сайты</h3>
               <p>Мир никогда не будет прежним<br> после того как увидят ваш сайт!</p>
-              <a class="btn button-order" href="#">Заказать</a>
+              <a class="btn button-order-red" href="#">Заказать</a>
             </li>
             <li class="service-item">
               <p>
@@ -80,7 +82,7 @@
               </p>
               <h3 class="service-header">Приложения</h3>
               <p>Покорите топ-10 приложений в<br> AppStore и Google Play</p>
-              <a class="btn button-order" href="#">Заказать</a>
+              <a class="btn button-order-green" href="#">Заказать</a>
             </li>
             <li class="service-item">
               <p>
@@ -88,14 +90,14 @@
               </p>
               <h3 class="service-header">Презентации</h3>
               <p>Вы даже не подозреваете,<br> насколько вы изумительны.</p>
-              <a class="btn button-order" href="#">Заказать</a>
+              <a class="btn button-order-yellow" href="#">Заказать</a>
             </li>
           </ul>
       </section>
       <section class="main-about-us">
         <h2 class="visually-hidden">О нас</h2>
           <div class="about-us">
-            <p>Мы - маленькая, но гордая<br> дизайн-студия из Краснодара.</p>
+            <p><b class="tagline-us">Мы - маленькая, но гордая<br> дизайн-студия из Краснодара.</b></p>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
             <h4>Выполняем заказы на разработку:</h4>
             <ul class="list-about-us">
@@ -156,11 +158,13 @@
           <img src="img/map.jpg" alt="Карта офиса по адресу ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
         </div>
         <div class="contacts">
-          <p>
-            <b>NЁRDS DESIGN STUDIO</b><br>
+          <p class="contacts-description">
+            <b class="title-contacts">NЁRDS DESIGN STUDIO</b><br>
             191186, Санкт-Петербург.<br>
             ул. Б. Конюшенная, д. 19/8<br>
             тел. +7(812)275-75-75
+          </p>
+          <p>
             <a class="btn button-write-us" href="#">Напишите нам</a>
           </p>
         </div>
@@ -178,26 +182,26 @@
           </li>
   			</ul>
         <div class="discount">
-  			  <p><b>Давайте дружить, это выгодно!</b></p>
-  			  <p>Скидка 10% для друзей из социальных сетей.</p>
+  			  <p><b class="tagline-friendship">Давайте дружить, это выгодно!</b></p>
+  			  <p class="discount-discription">Скидка 10% для друзей из социальных сетей.</p>
         </div>
   		</section>
   	</footer>
 
 
     <section class="modal modal-feedback">
-      <h2>Напишите нам</h2>
+      <h2 class="write-us">Напишите нам</h2>
       <form class="feedback-form" action="#" type="post">
         <p>
-          <label for="name-field">Ваше имя:</label>
+          <label for="name-field"><b>Ваше имя:</b></label>
           <input type="text" name="name" id="name-field" placeholder="Представтесь, пожалуйста">
         </p>
         <p>
-          <label for="email-field">Ваш email:</label>
+          <label for="email-field"><b>Ваш email:</b></label>
           <input type="text" name="email" id="email-field" placeholder="Для отправки ответа">
         </p>
         <p>
-          <label for="message-area">Текст письма:</label>
+          <label for="message-area"><b>Текст письма:</b></label>
           <textarea name="text" placeholder="В свободной форме" id="message-area"></textarea>
         </p>
         <button class="btn" type="submit">Отправить</button>

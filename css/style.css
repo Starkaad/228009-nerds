@@ -1,9 +1,199 @@
 body {
+  padding: 0px;
+  margin: 0px;
   font-size: 16px;
   color: #283136;
-  font-weight: normal;
+  font-weight: 400;
   font-family: "Roboto", sans-serif;
   line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+.site-navigation,
+.user-navigation,
+.services-list,
+.list-about-us,
+.partners,
+.social-list,
+.grid-list,
+.features-list,
+.sorting-list,
+.arrow-list,
+.catalog-list,
+.pagination-list {
+  list-style: none;
+}
+
+
+
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #e74246;
+}
+
+.btn:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+
+}
+
+
+.services-list a {
+  color: #ffffff;
+}
+
+.services-list .button-order-red {
+  background-color: #fb565a;
+}
+
+.services-list .button-order-red:hover,
+.services-list .button-order-red:focus {
+  background-color: #e74246;
+}
+
+.services-list .button-order-red:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.services-list .button-order-green {
+  background-color: #00ca74;
+}
+
+.services-list .button-order-green:hover,
+.services-list .button-order-green:focus {
+  background-color: #00bc6c;
+}
+
+.services-list .button-order-green:active {
+  background-color: #00aa62;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+.services-list .button-order-yellow {
+  background-color: #efc84a;
+}
+
+.services-list .button-order-yellow:hover,
+.services-list .button-order-yellow:focus {
+  background-color: #eab534;
+}
+
+.services-list .button-order-yellow:active {
+  background-color: #e5a722;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+b.tagline {
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+  font-weight: bold;
+}
+
+b.tagline-us {
+  font-size: 45px;
+  line-height: 45px;
+  color:#000000;
+  font-weight: bold;
+}
+
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.row-percentages {
+  font-size: 45px;
+  line-height: 10.06px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.row-description {
+  font-size: 16px;
+  line-height: 18px;
+  color: #283136;
+}
+
+.title-contacts {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.contacts-description {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.tagline-friendship {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+.discount-discription {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+.service-header {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .filter-header {
@@ -11,12 +201,81 @@ body {
   color: #000000;
   font-weight: bold;
   line-height: 30px;
+  text-transform: uppercase;
+}
+
+label.from,
+label.to {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filter-price input[value] {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 
- .service-header {
-   font-size: 24px;
-   color: #000000;
-   font-weight: bold;
-   line-height: 30px;
- }
+.grid-list label {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+.features-list label {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.sorter-title {
+  font-size: 18px
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+
+.title-buy {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.description-buy {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.write-us {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.modal-feedback b {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.modal-feedback input[placeholder] {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.modal-feedback textarea[placeholder] {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+
+
+

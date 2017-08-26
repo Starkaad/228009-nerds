@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -41,9 +43,9 @@
         <form class="filter" method="get" action="#">
           <fieldset class="filter-price">
             <legend><h3 class="filter-header">Стоимость:</h3></legend>
-              <label for="from">От</label>
+              <label class="from" for="from">От</label>
               <input type="number" name="price-filter-from" value="0">
-              <label for="to">До</label>
+              <label class="to" for="to">До</label>
               <input type="number" name="price-filter-to" value="15000">
           </fieldset>
           <fieldset class="filter-grid">
@@ -91,123 +93,126 @@
             <button type="submit" class="filter-button button">Показать</button>
           </form>
       </section>
-        <section class="catalog">
-          <h2 class="visually-hidden">Список готовых шаблонов</h2>
-          <div class="sorter">
-            <h3>Сортировать:</h3>
-            <ul class="sorting-list">
-              <li class="sorting-item"><a href="#">По цене</a></li>
-              <li class="sorting-item"><a href="#">По типу</a></li>
-              <li class="sorting-item"><a href="#">По названию</a></li>
-              <ul class="sorting-arrows">
-                <li class="arrow down item-current"><a href="#">Стрелка вниз</a></li>
-                <li class="arrow up"><a href="#">Стрелка верх</a></li>
-              </ul>
-            </ul>
-            <ul class="catalog-list">
-              <li class="catalog-item catalog-item-current">
+      <section class="catalog">
+        <h2 class="visually-hidden">Список готовых шаблонов</h2>
+        <div class="sorter">
+          <h3 class="sorter-title">Сортировать:</h3>
+          <ul class="sorting-list">
+            <li class="sorting-item"><a href="#">По цене</a></li>
+            <li class="sorting-item"><a href="#">По типу</a></li>
+            <li class="sorting-item"><a href="#">По названию</a></li>
+            <ul class="sorting-arrows">
+          </ul>
+          <ul class="arrow-list">
+              <li class="arrow down item-current"><a href="#">Стрелка вниз</a></li>
+              <li class="arrow up"><a href="#">Стрелка верх</a></li>
+          </ul>
+          <ul class="catalog-list">
+            <li class="catalog-item catalog-item-current">
+              <p class="catalog-item-image">
+                <a href="#">
+                  <img src="img/img-sedona.jpg"  alt="sedona" width="360" height="576">
+                </a>
+              </p>
+            </li>
+            <li class="catalog-item">
+              <p class="catalog-item-image">
+                <a href="#">
+                  <img src="img/img-pink.jpg"  alt="pink" width="360" height="576">
+                </a>
+              </p>
+            </li>
+              <li class="catalog-item">
                 <p class="catalog-item-image">
                   <a href="#">
-                    <img src="img/img-sedona.jpg"  alt="sedona" width="360" height="576">
+                    <img src="img/img-barbershop.jpg"  alt="barbershop-borodinski" width="360" height="576">
                   </a>
                 </p>
-                </li>
-                <li class="catalog-item">
-                  <p class="catalog-item-image">
-                    <a href="#">
-                      <img src="img/img-pink.jpg"  alt="pink" width="360" height="576">
-                    </a>
-                  </p>
-                </li>
-                <li class="catalog-item">
-                  <p class="catalog-item-image">
-                    <a href="#">
-                      <img src="img/img-barbershop.jpg"  alt="barbershop-borodinski" width="360" height="576">
-                    </a>
-                  </p>
-                </li>
-                <li class="catalog-item">
-                  <p class="catalog-item-image">
-                    <a href="#">
-                      <img src="img/img-mishka.jpg"  alt="mishka" width="360" height="576">
-                    </a>
-                  </p>
-                </li>
-                <li class="catalog-item">
-                  <p class="catalog-item-image">
-                    <a href="#">
-                      <img src="img/img-aplus.jpg"  alt="aplus" width="360" height="576">
-                    </a>
-                  </p>
-                </li>
-                <li class="catalog-item">
-                  <p class="catalog-item-image">
-                    <a href="#">
-                      <img src="img/img-kvast.jpg"  alt="kvast" width="360" height="576">
-                    </a>
-                  </p>
-                </li>
+              </li>
+              <li class="catalog-item">
+                <p class="catalog-item-image">
+                  <a href="#">
+                    <img src="img/img-mishka.jpg"  alt="mishka" width="360" height="576">
+                  </a>
+                </p>
+              </li>
+              <li class="catalog-item">
+                <p class="catalog-item-image">
+                  <a href="#">
+                    <img src="img/img-aplus.jpg"  alt="aplus" width="360" height="576">
+                  </a>
+                </p>
+              </li>
+              <li class="catalog-item">
+                <p class="catalog-item-image">
+                  <a href="#">
+                    <img src="img/img-kvast.jpg"  alt="kvast" width="360" height="576">
+                  </a>
+                </p>
+              </li>
             </ul>
-              <ul class="pagination-list">
-                <li class="pagination-item pagination-item-current"><a class="paginaton-button">1</a></li>
-                <li class="pagination-item"><a class="paginaton-button" href="#">2</a></li>
-                <li class="pagination-item"><a class="paginaton-button" href="#">3</a></li>
-                <li class="pagination-item"><a class="paginaton-button" href="#">4</a></li>
-                <li class="pagination-item"><a class="paginaton-button next" href="#">Следующая</a></li>
-              </ul>
+            <ul class="pagination-list">
+              <li class="pagination-item pagination-item-current"><a class="paginaton-button">1</a></li>
+              <li class="pagination-item"><a class="paginaton-button" href="#">2</a></li>
+              <li class="pagination-item"><a class="paginaton-button" href="#">3</a></li>
+              <li class="pagination-item"><a class="paginaton-button" href="#">4</a></li>
+              <li class="pagination-item"><a class="paginaton-button next" href="#">Следующая</a></li>
+            </ul>
         </section>
     </main>
 
 
     <footer class="main-footer">
-  	  <section class="footer-contacts">
+      <section class="footer-contacts">
         <h2 class="visually-hidden">Местоположение офиса</h2>
         <div class="location-map">
           <img src="img/map.jpg" alt="Карта офиса по адресу ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
         </div>
         <div class="contacts">
-          <p>
-            <b>NЁRDS DESIGN STUDIO</b><br>
+          <p class="contacts-description">
+            <b class="title-contacts">NЁRDS DESIGN STUDIO</b><br>
             191186, Санкт-Петербург.<br>
             ул. Б. Конюшенная, д. 19/8<br>
             тел. +7(812)275-75-75
+          </p>
+          <p>
             <a class="btn button-write-us" href="#">Напишите нам</a>
           </p>
         </div>
-  		</section>
-  		<section class="footer-social">
-  		  <ul class="social-list">
-  			  <li>
+      </section>
+      <section class="footer-social">
+        <ul class="social-list">
+          <li>
             <a class="social-button" href="#">Вконтакте</a>
           </li>
-  				<li>
+          <li>
             <a class="social-button" href="#">Фейсбук</a>
           </li>
-  				<li>
+          <li>
             <a class="social-button" href="#">Инстаграм</a>
           </li>
-  			</ul>
+        </ul>
         <div class="discount">
-  			  <p><b>Давайте дружить, это выгодно!</b></p>
-  			  <p>Скидка 10% для друзей из социальных сетей.</p>
+          <p><b class="tagline-friendship">Давайте дружить, это выгодно!</b></p>
+          <p class="discount-discription">Скидка 10% для друзей из социальных сетей.</p>
         </div>
-  		</section>
-  	</footer>
+      </section>
+    </footer>
 
 
     <section class="modal modal-feedback">
-      <h2>Напишите нам</h2>
+      <h2 class="write-us">Напишите нам</h2>
       <form class="feedback-form" action="#" type="post">
         <p>
-          <label for="name-field">Ваше имя:</label>
+          <label for="name-field"><b>Ваше имя:</b></label>
           <input type="text" name="name" id="name-field" placeholder="Представтесь, пожалуйста">
         </p>
         <p>
-          <label for="email-field">Ваш email:</label>
+          <label for="email-field"><b>Ваш email:</b></label>
           <input type="text" name="email" id="email-field" placeholder="Для отправки ответа">
         </p>
         <p>
-          <label for="message-area">Текст письма:</label>
+          <label for="message-area"><b>Текст письма:</b></label>
           <textarea name="text" placeholder="В свободной форме" id="message-area"></textarea>
         </p>
         <button class="btn" type="submit">Отправить</button>
@@ -218,32 +223,32 @@
     <section class="sedona">
       <h4 class="title-buy">Sedona</h4>
       <p class="description-buy">Информационный сайт для туристов</p>
-      <p><a class="button buy-button">9 900 руб.</a></p>
+      <p><a class="btn buy-button">9 900 руб.</a></p>
     </section>
     <section class="pink">
       <h4 class="title-buy">Pink</h4>
       <p class="description-buy">Продуктовый лендинг приложения для iOS и Android</p>
-      <p><a class="button buy-button">9 900 руб.</a></p>
+      <p><a class="btn buy-button">9 900 руб.</a></p>
     </section>
     <section class="barbershop-borodinski">
       <h4 class="title-buy">Barbershop-borodinski</h4>
       <p class="description-buy">Сайт салоны красоты. Для мужчин, да.</p>
-      <p><a class="button buy-button">9 900 руб.</a></p>
+      <p><a class="btn buy-button">9 900 руб.</a></p>
     </section>
     <section class="miska">
       <h4 class="title-buy">Miska</h4>
       <p class="description-buy">Интернет-магазин вязаных игрушек</p>
-      <p><a class="button buy-button">9 900 руб.</a></p>
+      <p><a class="btn buy-button">9 900 руб.</a></p>
     </section>
     <section class="aplus">
       <h4 class="title-buy">Aplus</h4>
       <p class="description-buy">Лендинг курсов повышения квалификации</p>
-      <p><a class="button buy-button">9 900 руб.</a></p>
+      <p><a class="btn buy-button">9 900 руб.</a></p>
     </section>
     <section class="kvast">
       <h4 class="title-buy">Kvast</h4>
       <p class="description-buy">Промо-сайт производителя крафтового кваса</p>
-      <p><a class="button buy-button">9 900 руб.</a></p>
+      <p><a class="btn buy-button">9 900 руб.</a></p>
     </section>
 
   </body>
