@@ -4,7 +4,7 @@ body {
   font-size: 16px;
   color: #283136;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   line-height: 24px;
 }
 
@@ -12,9 +12,9 @@ a {
   text-decoration: none;
 }
 
-
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .site-navigation,
@@ -32,14 +32,10 @@ img {
   list-style: none;
 }
 
-
-
-
 .main-navigation {
-  font-size: 16px;
   line-height: 30px;
   color: #000000;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -63,6 +59,7 @@ img {
 .btn {
   color: #ffffff;
   background-color: #fb565a;
+  line-height: inherit;
 }
 
 .btn:hover,
@@ -123,7 +120,6 @@ img {
   background-color: #e5a722;
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 b.tagline {
   font-size: 55px;
@@ -235,7 +231,6 @@ label.to {
   color: #000000;
   text-transform: uppercase;
 }
-
 
 .title-buy {
   font-size: 18px;
