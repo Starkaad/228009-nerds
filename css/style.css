@@ -4,7 +4,7 @@ body {
   font-size: 16px;
   color: #283136;
   font-weight: 400;
-  font-family: "Roboto", "Helvetica", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   line-height: 24px;
 }
 
@@ -15,6 +15,26 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  margin:  0 auto;
+}
+
+.main-slider {
+  background-color: #eeeeee;
+}
+
+.navigation-wrapper {
+  background-color: #eeeeee;
 }
 
 .site-navigation,
@@ -37,11 +57,40 @@ img {
   color: #000000;
   font-weight: 500;
   text-transform: uppercase;
+  min-height: 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box; 
+  font-size: 16px;
+  background-color: #eeeeee;
+  max-width: 1200px;
+  margin: auto;
 }
+
+.site-navigation {
+  flex-grow: 8;
+  justify-content: center;
+}
+
+
+.site-navigation a {
+  margin-right: 48px;
+}
+
+.site-navigation,
+.user-navigation {
+  display: flex;
+
+}
+
 
 .site-navigation a,
 .user-navigation a {
   color: #000000;
+
 }
 
 .site-navigation a:hover,
@@ -56,10 +105,61 @@ img {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.user-cart a::before{
+  content: "";
+  display: inline-block;
+  background: url("../img/cart-icon.svg") no-repeat center;
+  width: 15px;
+  height: 15px;
+  vertical-align: initial;
+  margin-right: 26px;
+}
+
+.slide-img {
+  position: relative;
+  align-self: center;
+  min-height: 430px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slide-img.current {
+  display: flex;
+}
+
+.slide-img img {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.slide-img b {
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+}
+
+.slide {
+  padding: 65px 20px; 
+  width: 520px;
+}
+
+.slide-description {
+  width: 400px;
+}
+
 .btn {
   color: #ffffff;
   background-color: #fb565a;
-  line-height: inherit;
+  padding:  7px 38px;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.button-more {
+  background-color: #fb565a;
 }
 
 .btn:hover,
@@ -71,6 +171,35 @@ img {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
 
+}
+
+.services {
+  padding-top: 80px;
+  padding-bottom: 96px;
+  padding-left: 20px;
+  border-bottom: solid 2px #eeeeee; 
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+.services-list {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 100px;
+}
+
+
+.services-list li {
+  margin-right: 100px;
+}
+
+.services-list li:last-child {
+  margin: 0px;
+}
+
+.services-list li {
+  width: 300px;
 }
 
 
@@ -121,26 +250,91 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
-b.tagline {
-  font-size: 55px;
-  line-height: 55px;
-  color: #000000;
-  font-weight: bold;
+
+.main-about-us {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  margin-bottom: 78px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
 }
 
-b.tagline-us {
+.about-us {
+  width: 660px;
+  margin-top: 77px;
+}
+
+.about-us li {
+  margin-top: 35px;
+}
+
+.advantages {
+  width: 360px;
+  margin-top: 40px;
+}
+
+.about-us-tag {
+  display: block;
+  margin-top: 45px;
+}
+
+.tagline-us {
   font-size: 45px;
   line-height: 45px;
   color:#000000;
   font-weight: bold;
 }
 
+.about-us-decription {
+  display: block;
+  margin-top: 35px;
+  color: #283136;
+}
+
+.about-us-tag,
+.advantages p {
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+table {
+  margin-top: 50px;
+  border-collapse: collapse;
+}
+
+.tagline-year-us {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.row-percentages td {
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: bold;
+  color: #000;
+  height: 35px;
+  padding-bottom: 24px;
+}
+
+.row-description td {
+  line-height: 18px;
+  color: #283136;
+}
+
 .page-title {
   font-size: 55px;
   line-height: 55px;
-  color: #000000;
   font-weight: bold;
+  background-color: #eeeeee;
+  max-width: 1200px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .row-percentages {
@@ -156,6 +350,50 @@ b.tagline-us {
   color: #283136;
 }
 
+.main-partners {
+  border-bottom: solid 2px #eeeeee; 
+  border-top: solid 2px #eeeeee; 
+
+}
+
+.partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 47px auto 45px;
+  max-width: 1200px;
+}
+
+.partners a {
+  opacity: 0.2;
+}
+
+.partners a:hover {
+  opacity: 1;
+}
+
+.footer-contacts {
+  margin-top: 80px;
+  height: 416px;
+  padding-top: 54px;
+}
+
+.contacts {
+  margin-left: 20px;
+  box-sizing: border-box;
+  width: 320px;
+  height: 320px;
+  background-color: #ffffff;
+  padding: 50px;
+}
+
+.contacts-description {
+  color: #666666;
+  margin-bottom: 23px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .title-contacts {
   font-size: 18px;
   line-height: 30px;
@@ -164,11 +402,31 @@ b.tagline-us {
   text-transform: uppercase;
 }
 
-.contacts-description {
-  font-size: 16px;
-  line-height: 18px;
-  color: #666666;
+.container-catalog {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+.filters {
+  width: 260px;
+  margin-right: 120px;
+  flex: 0 0 260px;
+}
+
+.catalog {
+  padding: 0px 20px;
+}
+
+.logo-catalog:hover,
+.logo-catalog:focus {
+  opacity: 0.8;
+}
+
+.logo-catalog:active {
+  opacity: 0.3
+}
+
 
 .tagline-friendship {
   font-size: 36px;
@@ -200,28 +458,63 @@ b.tagline-us {
   text-transform: uppercase;
 }
 
-label.from,
-label.to {
+.filter fieldset {
+  border: none;
+}
+
+.filter ul {
+  padding-left: 0px; 
+  margin: 0px;
+}
+
+.filter li {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 20px;
+  color: #283136;
+}
+
+
+.filter li:hover {
+  color: #000000;
+}
+
+.filter li:disabled {
+  color: #000000;
+}
+
+label:hover {
+  color: #000;
+}
+
+.filter-button {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  background-color: #d5d5d5;
+}
+
+
+.input-from-to {
+  background-color: #eeeeee;
+}
+
+.filter .from-to {
   text-transform: uppercase;
 }
 
 .filter-price input[value] {
   font-size: 16px;
   line-height: 22px;
-}
-
-
-.grid-list label {
-  font-size: 16px;
-  line-height: 20px;
-}
-
-
-.features-list label {
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .sorter-title {
@@ -232,24 +525,95 @@ label.to {
   text-transform: uppercase;
 }
 
-.title-buy {
-  font-size: 18px;
+.sorter-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorting-list {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
+.sorting-list .sorting-item {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000;
+  opacity: 0.3;
+  margin-left: 20px;
+}
+
+.sorting-list .sorting-item:hover,
+.sorting-list .sorting-item:focus {
+  opacity: 0.6;
+}
+
+.sorting-list .sorting-item:active {
+  opacity: 1;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+  margin: 55px 0px 0px 0px;
+  padding: 0px;
+}
+
+.catalog-list .button {
+  background-color: #fb565a;
+  border: none;
+}
+
+.catalog-list .button:hover {
+  background-color: #e74246;
+}
+
+.catalog-list .button:active {
+  color: #e16669;
+  background-color: #d7373b;
+}
+
+
+.block-info-title {
+  font-size: 16px;
   line-height: 30px;
   font-weight: bold;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
 }
 
-.description-buy {
-  font-size: 16px;
-  line-height: 18px;
-  color: #444444;
+.block-info {
+  background-color: #eeeeee;
 }
+
+.pagination-list {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.pagination-list a {
+  background-color: #eeeeee;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.pagination-list a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-list a:active {
+  background-color: #d5d5d5;
+}
+
 
 .write-us {
   font-size: 45px;
   line-height: 45px;
-  font-weight: bold;
   color: #000000;
 }
 
@@ -271,6 +635,5 @@ label.to {
   line-height: 18px;
   color: #444444;
 }
-
 
 
