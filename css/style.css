@@ -1,5 +1,5 @@
 body {
-  min-width: 1440px;
+  min-width: 1200px;
   padding: 0px;
   margin: 0px;
   font-size: 16px;
@@ -84,7 +84,7 @@ img {
   text-transform: uppercase;
 }
 
-.contacts-description {
+.contacts {
   font-size: 16px;
   line-height: 18px;
   color: #666;
@@ -125,6 +125,7 @@ img {
   color: #444;
   padding: 15px 14px;
   width: 100%;
+  font: inherit;
 }
 
 .page-title {
@@ -170,7 +171,7 @@ img {
   text-transform: uppercase;
 }
 
-.block-info-title {
+.block-info-title a {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -203,9 +204,10 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-header-logo {
@@ -229,14 +231,13 @@ img {
 
 .site-navigation {
   display: flex;
+  
 }
 
 .site-navigation li{
   margin-right: 46px;
 }
 
-.user-navigation li {
-}
 
 .user-navigation .cart-link {
   padding-left: 43px;
@@ -260,7 +261,7 @@ img {
 }
 
 .services {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   border-bottom: 2px solid #eeeeee;
   padding-bottom: 91px;
 }
@@ -283,7 +284,7 @@ img {
 .service-item p {
   margin: 0;
   width: 260px;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
 }
 
 .main-about-us {
@@ -294,6 +295,7 @@ img {
 
 .list-about-us {
   margin: 0;
+  margin-left: -14px;
   position: relative;
 }
 
@@ -308,8 +310,8 @@ img {
   height: 2px;
   width: 25px;
   background-color: #fb565a;
-  left: 10px;
-  margin-top: 10px;
+  left: 15px;
+  margin-top: 13px;
 
 }
 
@@ -339,8 +341,9 @@ img {
 
 .advantages p {
   margin: 0px;
-  margin-top: 35px;
+  margin-top: 30px;
   margin-bottom: 22px;
+  margin-left: 15px;
 }
 
 .partners {
@@ -828,6 +831,10 @@ fieldset {
   display: block;
 }
 
+.slide-text p {
+  margin-bottom: 38px;
+}
+
 .range-filter {
   max-width: 260px;
 }
@@ -908,15 +915,23 @@ fieldset {
   border-radius: 5px;
   background: #f1f1f1;
 }
-
 .modal-feedback {
-  display: none;
-  position: relative;
-  margin: 0 auto;
   width: 760px;
-  padding: 62px 100px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  height: 590px;
+  outline: 1px solid green;
+  padding-top: 68px;
+  padding-bottom: 84px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 0 auto;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.1;
 }
 
 .feedback-form input,
@@ -936,50 +951,11 @@ fieldset {
 }
 
 .feedback-form input:invalid,
-.feedback-from textarea:invalid {
+.feedback-form textarea:invalid {
   border-color: #e74246;
   color: #e74246;
 }
 
-.modal-close:hover {
-  opacity: 1;
-}
-
-.modal-close:active {
-  opacity: 0.1;
-}
-
-.modal-close {
-position: absolute;
-top: 0;
-right: -34px;
-width: 22px;
-height: 22px;
-font-size: 0;
-opacity: 0.3;
-border: 0;
-background-color: transparent;
-cursor: pointer;
-}
-
-.modal-close::before,
-.modal-close::after {
-content: "";
-position: absolute;
-width: 22px;
-height: 3px;
-top: 10px;
-left: 0px;
-background-color: #fb565a;
-}
-
-.modal-close::before {
-  transform: rotate(45deg);
-}
-
-.modal-close::after {
-  transform: rotate(-45deg);
-}
 
 
 
