@@ -184,8 +184,8 @@
             </li>
           </ul>
           <div class="discount">
-            <p><b class="tagline-friendship">Давайте дружить, это выгодно!</b></p>
-            <p class="discount-discription">Скидка 10% для друзей из социальных сетей.</p>
+            <b class="tagline-friendship">Давайте дружить, это выгодно!</b>
+            <span class="discount-discription">Скидка 10% для друзей из социальных сетей.</span>
           </div>
         </div>
       </section>
@@ -215,5 +215,25 @@
       </form>
       <button class="button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
       </section>
+      <!-- PixLayout -->
+<script src="_assets/jquery.js"></script>
+<script src="_assets/jquery.pixlayout.js"></script>
+<script>
+    if(true) {
+        $(function(){
+            $.pixlayout({
+                src: "_assets/nerds-index.jpg",
+                opacity: 0.4,
+                top: 0,
+                left: -45,
+                right: -45,	
+                center: true,
+                clip: true,
+                show: true,
+            })
+        });
+    }
+</script>
+<!-- / PixLayout -->
   </body>
 </html>
