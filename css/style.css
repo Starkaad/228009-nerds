@@ -13,11 +13,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .main-navigation ul,
 .container ul,
 .footer-social ul {
@@ -54,6 +49,7 @@ img {
   line-height: 45px;
   font-weight: 500;
   color: #000;
+  letter-spacing: 0.003em;
 }
 
 .about-us-tag {
@@ -62,6 +58,7 @@ img {
   font-weight: 700;
   color: #000;
   text-transform: uppercase;
+  letter-spacing: 0.006em
 }
 
 .row-percentages {
@@ -84,6 +81,7 @@ img {
   text-transform: uppercase;
   display: block;
   margin-top: -8px;
+  margin-left: 2px;
 }
 
 .contacts {
@@ -94,12 +92,14 @@ img {
 
 .contacts p {
   display: block;
-  margin-top: 20px;
+  margin-top: 23px;
   margin-left: 5px;
 }
-
+.contacts .tel{
+  margin-top: 19px;
+}
 .tel {
-  margin-bottom: 38px;
+  margin-bottom: 36px;
 }
 
 .address {
@@ -110,6 +110,9 @@ img {
   line-height: 36px;
   font-weight: 700;
   color: #000;
+  letter-spacing: 0.004em;
+  display: block;
+  margin-bottom: 8px;
 }
 
 .discount-discription {
@@ -159,7 +162,7 @@ img {
   font-weight: 700;
   color: #000;
   text-transform: uppercase;
-  margin-bottom: 46px;
+  margin-top: 0;
 }
 
 .filter-grid .filter-header {
@@ -177,6 +180,7 @@ img {
   font-weight: 700;
   color: #000;
   text-transform: uppercase;
+  letter-spacing: 0.001em;
 }
 
 .from-to {
@@ -200,7 +204,7 @@ img {
   font-weight: 700;
   color: #000;
   text-transform: uppercase;
-  margin-right: 240px;
+  margin-right: 220px;
 }
 
 .sorting-item {
@@ -275,6 +279,7 @@ img {
 
 .site-navigation {
   display: flex;
+  margin-left: 8px;
 }
 
 .site-navigation li{
@@ -316,7 +321,12 @@ img {
   margin: 0;
   padding: 0;
 }
-
+.service-item:first-child p{
+  letter-spacing: -0.006em;
+}
+.service-item:last-child p{
+  letter-spacing: 0.005em;
+}
 .service-item h3 {
   margin: 0;
   margin-top: 20px;
@@ -328,12 +338,12 @@ img {
   margin: 0;
   width: 260px;
   margin-bottom: 45px;
+  letter-spacing: 0.019em;
 }
 
 .main-about-us {
-  margin-bottom: 68px;
+  margin-bottom: 58px;
   display: flex;
-  justify-content: space-between;
 }
 
 .list-about-us {
@@ -359,6 +369,7 @@ img {
 
 .about-us {
   width: 660px;
+  margin-right: auto;
 }
 
 .advantages {
@@ -368,7 +379,8 @@ img {
 .about-us p {
   margin: 0;
   margin-top: 33px;
-  margin-bottom: 36px;
+  margin-bottom: 37px;
+  letter-spacing: 0.001em;
 }
 
 .percent {
@@ -383,13 +395,13 @@ img {
 
 .advantages p {
   margin: 0px;
-  margin-top: 30px;
-  margin-bottom: 22px;
-  margin-left: 15px;
+  margin-top: 28px;
+  margin-bottom: 23px;
+  margin-left: 16px;
 }
 
 .partners {
-  width: 1200px;
+  width: 1161px;
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 34px;
@@ -425,7 +437,7 @@ img {
 }
 
 .partners-items li:nth-child(3) {
-  margin-right: 20px;
+  margin-right: 16px;
   padding-right: 10px;
 }
 
@@ -511,7 +523,6 @@ img {
 
 .discount {
   width: 560px;
-  margin-right:;
 }
 
 .header-catalog {
@@ -538,18 +549,24 @@ fieldset {
 .sorting-list {
   display: flex;
   width: 300px;
+  margin: 0;
+  margin-top: 2px;
+  padding: 0;
 }
 
 .sorter-block .item-current {
   opacity: 1;
 }
-
+.catalog{
+  margin-bottom: 13px;
+}
 .catalog-list {
   position: relative;
   width: 760px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: -14px;
 }
 
 .catalog-list li {
@@ -658,7 +675,8 @@ fieldset {
 }
 
 .button-write-us {
-  padding-top: 16px; 
+  padding-left: 2px;
+  padding-top: 18px; 
   padding-bottom: 16px;
   width: 220px;
   border-radius: 5px;
@@ -737,13 +755,13 @@ fieldset {
 .pagination-button {
   border: 3px solid #eeeeee;
   background-color: #eeeeee;
-  padding: 13px 18px;
+  padding: 13px 17px;
 }
 
 .pagination-button-next {
   border: 3px solid #eeeeee;
   background-color: #eeeeee;
-  padding: 13px 76px;
+  padding: 13px 79px;
 }
 
 .pagination-button-next:hover {
@@ -928,6 +946,7 @@ fieldset {
 
 .range-filter {
   width: 100%;
+  margin-left: -1px;
 }
 
 .min-price {
@@ -995,7 +1014,7 @@ fieldset {
   font-size: 16px;
   line-height: 22px;
   width: 60px;
-  margin-left: 10px;
+  margin-left: 12px;
   padding: 8px 10px;
   text-align: center;
   color: #283136;
@@ -1159,16 +1178,19 @@ fieldset {
   background-color: #fb565a;
 }
 
+.table-advantages{
+  margin-left: -2px;
+}
 .table-advantages td {
-  padding-bottom: 10px;
+  padding-bottom: 14px;
 }
 
 .table-advantages td:nth-child(2) {
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .table-advantages td:nth-child(2) {
-  padding-right: 20px;
+  padding-right: 21px;
 }
 
 .footer-contacts {
@@ -1193,19 +1215,27 @@ fieldset {
 .filter-price {
   width: 100%;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 19px;
+}
+
+legend{
+  padding-top: 16px;
+  margin-left: -2px;
+  margin-bottom: 48px;
+  letter-spacing: 0.04em;
 }
 
 .filter-grid {
   padding: 0px;
   margin: 0px;
-  margin-bottom: 5px;
+  margin-bottom: -41px;
+  margin-left: 1px;
 }
 
 .filter-features {
   padding: 0px;
   margin: 0px;
-  margin-bottom: 30px;
+  margin-bottom: -2px;
 }
 
 .grid-list {
@@ -1267,6 +1297,9 @@ fieldset {
 .arrow-list a {
   display: inline-block;
 }
+.arrow-list li:first-child{
+  margin-right: 18px;
+}
 
 .arrow-list {
   display: flex;
@@ -1274,7 +1307,7 @@ fieldset {
   margin: 0;
   list-style: none;
 }
-  
+
 
 
 
