@@ -162,7 +162,6 @@ a {
   font-weight: 700;
   color: #000;
   text-transform: uppercase;
-  margin-top: 0;
 }
 
 .filter-grid .filter-header {
@@ -171,7 +170,6 @@ a {
   font-weight: 700;
   color: #000;
   text-transform: uppercase;
-  margin-bottom: 
 }
 
 .filter-features .filter-header {
@@ -183,6 +181,13 @@ a {
   letter-spacing: 0.001em;
 }
 
+.filter-header {
+  margin: 0;
+}
+
+.filter-price legend {
+  margin-bottom: 47px;
+}
 .from-to {
   font-size: 16px;
   line-height: 22px;
@@ -1009,7 +1014,7 @@ fieldset {
 }
 
 .min-price {
-  margin-right: 25px;
+  margin-right: 24px;
 }
 
 .modal {
@@ -1203,7 +1208,7 @@ fieldset {
 
 .filter-price {
   padding: 0;
-  margin-bottom: 19px;
+  margin-bottom: 39px;
 }
 
 legend{
@@ -1212,14 +1217,15 @@ legend{
   letter-spacing: 0.04em;
 }
 
-.filter-price legend {
-  margin-bottom: 30px;
+.filter-grid legend {
+  margin-bottom: 15px;
 }
 
 .filter-grid {
   padding: 0px;
   margin: 0px;
   margin-left: 1px;
+  margin-bottom: 10px;
 }
 
 .filter-features {
@@ -1229,7 +1235,7 @@ legend{
 }
 
 .filter-features legend {
-  padding-top: 4px;
+  margin-bottom: 15px;
 }
 
 
