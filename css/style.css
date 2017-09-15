@@ -944,15 +944,6 @@ fieldset {
   margin-top: 30px;
 }
 
-.range-filter {
-  width: 100%;
-  margin-left: -1px;
-}
-
-.min-price {
-  margin-right: 28px;
-}
-
 .range-controls {
   position: relative;
   width: 220px;
@@ -998,12 +989,6 @@ fieldset {
 }
 
 .price-controls {
-  display: flex;
-}
-
-.price-controls label {
-  display: inline-block;
-  width: 100%;
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
@@ -1021,6 +1006,10 @@ fieldset {
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
+}
+
+.min-price {
+  margin-right: 25px;
 }
 
 .modal {
@@ -1213,7 +1202,6 @@ fieldset {
 }
 
 .filter-price {
-  width: 100%;
   padding: 0;
   margin-bottom: 19px;
 }
@@ -1221,22 +1209,29 @@ fieldset {
 legend{
   padding-top: 16px;
   margin-left: -2px;
-  margin-bottom: 48px;
   letter-spacing: 0.04em;
+}
+
+.filter-price legend {
+  margin-bottom: 30px;
 }
 
 .filter-grid {
   padding: 0px;
   margin: 0px;
-  margin-bottom: -41px;
   margin-left: 1px;
 }
 
 .filter-features {
   padding: 0px;
   margin: 0px;
-  margin-bottom: -2px;
+  margin-bottom: 30px;
 }
+
+.filter-features legend {
+  padding-top: 4px;
+}
+
 
 .grid-list {
   padding: 0;
